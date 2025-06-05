@@ -64,15 +64,10 @@ Follow these instructions to set up a new project based on this template.
     ```
 
 2.  **Create and activate a virtual environment:**
-    * Using `venv`:
+    * Using `healthaivenv`:
         ```bash
-        python -m venv venv
-        source venv/bin/activate  # On Windows use `venv\Scripts\activate`
-        ```
-    * Using `conda`:
-        ```bash
-        conda create -n myenv python=3.9
-        conda activate myenv
+        python -m venv healthaivenv
+        source healthaivenv/bin/activate  # On Windows use `healthaivenv\Scripts\activate`
         ```
 
 3.  **Install dependencies:**
@@ -87,26 +82,27 @@ Follow these instructions to set up a new project based on this template.
         ```bash
         cp sample.env .env
         ```
-    * Edit the `.env` file with your specific configurations, API keys, database credentials, etc. **Do not commit the `.env` file to Git.**
+    * Edit the `.env` file with your specific configurations, API keys, database credentials, etc.
+    * **Important:** Verify that `.env` is listed in your `.gitignore` file to prevent accidentally committing sensitive information. If it's not there, add it:
+        ```bash
+        echo ".env" >> .gitignore
+        ```
 
 ## Usage
 
-(This section should be customized based on the typical project.)
+Based on work...
 
-* **Running data pipelines:**
-    ```bash
-    python src/data_processing/main_pipeline.py
-    ```
-* **Running analyses:**
-    Scripts in `src/analysis/` can be executed directly, or functions from these modules can be imported into notebooks.
 * **Working with notebooks:**
-    Launch Jupyter Lab or Jupyter Notebook:
+    Launch Jupyter Lab or Jupyter Notebook from the project root directory (where README.md is located). This ensures that all project modules and data paths are correctly accessible:
     ```bash
     jupyter lab
     # or
     jupyter notebook
     ```
-    Then navigate to the `notebooks/` directory to open and run your notebooks.
+    Then navigate to the `notebooks/` directory in the Jupyter interface. This approach ensures that:
+    * All project modules in `src/` are importable
+    * Relative paths to data in `data/` work correctly
+    * You maintain consistent access to project resources
 
 ## Contributing
 
