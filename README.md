@@ -12,17 +12,20 @@ This template helps ensure consistency and includes boilerplate for common tasks
 
 Here's an overview of the key directories and files in this template:
 
+```
+.
 ├── data/
-│   ├── interim/        # Intermediate data that has been transformed.
-│   ├── processed/      # Final, canonical data sets for analysis.
-│   └── raw/            # Original, immutable data.
-├── notebooks/          # Jupyter notebooks for exploration, experimentation, and analysis.
-├── reports/            # Generated reports, visualizations, and summaries.
-├── src/                # Source code for data processing, analysis, utility functions, etc.
-├── .gitignore          # Specifies intentionally untracked files that Git should ignore.
-├── README.md           # This file: provides an overview and instructions for the project.
-├── requirements.txt    # Lists the Python project dependencies.
-└── sample.env          # Example environment variables file.
+│   ├── interim/        # Intermediate data that has been transformed
+│   ├── processed/      # Final, canonical data sets for analysis
+│   └── raw/           # Original, immutable data
+├── notebooks/         # Jupyter notebooks for exploration, experimentation, and analysis
+├── reports/          # Generated reports, visualizations, and summaries
+├── src/              # Source code for data processing, analysis, utility functions, etc.
+├── .gitignore        # Specifies intentionally untracked files that Git should ignore
+├── README.md         # This file: provides an overview and instructions for the project
+├── requirements.txt  # Lists the Python project dependencies
+└── sample.env        # Example environment variables file
+```
 
 **Directory Descriptions:**
 
