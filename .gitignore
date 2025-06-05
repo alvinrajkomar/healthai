@@ -2,6 +2,78 @@
 venv/
 healthaivenv/
 
+# Environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# LaTeX
+*.aux
+*.bbl
+*.blg
+*.log
+*.out
+*.toc
+*.lof
+*.lot
+*.fls
+*.fdb_latexmk
+*.synctex.gz
+*.dvi
+*.pdf
+*.ps
+*.eps
+*.bcf
+*.run.xml
+*.nav
+*.snm
+*.vrb
+*.syntex.gz
+*.synctex
+*.acn
+*.acr
+*.alg
+*.glg
+*.glo
+*.gls
+*.idx
+*.ilg
+*.ind
+*.ist
+*.lol
+*.maf
+*.mtc
+*.mtc0
+*.slg
+*.slo
+*.sls
+*.svn
+*.thm
+*.tdo
+*.tld
+*.tls
+*.tms
+*.tns
+*.toc
+*.tps
+*.tpt
+*.trs
+*.tst
+*.tvs
+*.tvt
+*.tws
+*.twn
+*.twt
+*.twx
+*.twy
+*.twz
+*.tw1
+*.tw2
+
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
@@ -132,14 +204,7 @@ celerybeat.pid
 # SageMath parsed files
 *.sage.py
 
-# Environments
-.env
-.venv
-env/
-venv/
-ENV/
-env.bak/
-venv.bak/
+
 
 # Spyder project settings
 .spyderproject
